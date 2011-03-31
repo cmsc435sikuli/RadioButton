@@ -1,2 +1,6 @@
-./greplayer jfc -g GUITAR-Default.GUI -e efg.efg -t tests/t_e3442548224_e3442548224_e3442548224_e3442548224_e3442548224_e3442548224_e3442548224_e3442548224_e3442548224_e1009749812.tst --main-class Project --urls /home/peter/sguitar/RadioButton/Project.jar --config-file config/configuration.xml -m $1
-
+C_DIR=$(pwd)
+JAR_DIR=$(cd $(dirname $0) && pwd)
+cd $JAR_DIR
+cd ..
+./greplayer jfc -g GUITAR-Default.GUI -e efg.efg -t tests/t_e3442548224_e3442548224_e3442548224_e3442548224_e3442548224_e3442548224_e3442548224_e3442548224_e3442548224_e1009749812.tst --main-class Project --urls $JAR_DIR/Project.jar --config-file config/configuration.xml -m $1
+cd $C_DIR
